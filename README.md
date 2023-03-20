@@ -20,22 +20,23 @@
 If you develop or use marine electronics, Signal K server has something to offer for you. This document explains how you can take advantage of the Signal K server for your needs.  
 
 ### Boaters and Boat Owners
-For boaters, Signal K server runs in the background and makes functionality and data available to other apps and devices. One of its most popular features is to make data from the navigation  system, such as position, course, speed as well as AIS targets. This information is then easily accessible from popular apps like Navionics, iSailor, iNavX, Aqua Map and WilhelmSK via the WiFi network.
+For boaters, Signal K server runs in the background and makes functionality and data available to other apps and devices. One of its most popular features is to share information from the navigation systems, such as position, course, speed as well as AIS targets. This information is then easily accessible from popular apps like Navionics, iSailor, iNavX, Aqua Map and WilhelmSK over the WiFi network.
 
-Signal K  can also take care of the anchor watch, be a weather station and an automatic logbook. And as a final example, it can turn your boat into a MarineTraffic station which may give free access to 
-[their professional plans](https://help.marinetraffic.com/hc/en-us/articles/360017183497-As-a-station-owner-am-I-entitled-to-a-free-Subscription-).
+Signal K can also take care of the anchor watch, be a weather station or an automatic logbook for you. Last but not least, it can also turn your boat into a MarineTraffic station which may give free access to [their professional plans](https://help.marinetraffic.com/hc/en-us/articles/360017183497-As-a-station-owner-am-I-entitled-to-a-free-Subscription-).
 
 If you are a boat owner, you can easily run Signal K on a Victron Cerbo GX, RaspberryPi or similar hardware. To take full advantage of a Signal K server, you will probably want to connect it to your boat network via NMEA 0183 or NMEA 2000 but it is not a requirement.
 
 ### Marine Vendors
-For Marine vendors who build marine hardware and software, for example those developing navigation, monitoring and tracking systems, SIgnal K server is an opportunity to accelerate development and decrease time to market, by taking advantage of a proven, modern and extensible software platform that is open source and available with a permissive Apache 2.0 license. Signal K server is implemented in Node.js and is easy to integrate into modern systems that run Linux derivatives and is already running on systems developed by Victron Energy, Airmar Technology and others.
+For Marine vendors who build marine hardware and software, for example those developing navigation, monitoring and tracking systems, SIgnal K server is an opportunity to accelerate development and decrease time to market, by taking advantage of a proven, modern and extensible software platform that is open source and available with a permissive Apache 2.0 license. Signal K server is implemented in Node.js and is easy to integrate into modern systems that run Linux derivatives.
+
+Signal K is already running on systems developed by Victron Energy, Airmar Technology and others.
 
 ### Software Developers
 There are many boaters who happen to be highly skilled software developers. If you are one of them, Signal K offers you a free and open platform developed by boaters for other boaters like you, who want to build themselves and optionally share with other boaters. Signal K features an extensible [plugin framework](https://github.com/SignalK/signalk-server/blob/master/SERVERPLUGINS.md), [web applications](https://github.com/SignalK/signalk-server/blob/master/WEBAPPS.md) as well as a rich set of [REST](https://signalk.org/specification/1.7.0/doc/rest_api.html) and [Streaming APIs](https://signalk.org/specification/1.7.0/doc/streaming_api.html). Signal K server takes care of all the complicated parts of protocol decode, and conversions to and from NMEA2000, NMEA0183 and many more protocols. It makes the data available in JSON format according to the [Signal K standard specification]. This allows developers to bypass all the hurdles typically encountered when wanting to implement something for a boat. [Getting started](https://github.com/SignalK/signalk-server/blob/master/SERVERPLUGINS.md) is surprisingly easy.
 
 ## Signal K Platform
 
-There is more Signal K Platform than just Signal K Server. Signal K encompasses three major components:
+There is more to the comprehensive Signal K Platform than just the Signal K Server. Signal K encompasses three major components:
 
 1. **The Signal K Data Standard**: an open marine data standard. It is a modern data format for marine use, suitable for WiFi, cellphones, tables and the internet. Signal K server is build  data standard specification. is Built on standard web technologies including JSON, WebSockets and HTTP, Signal K provides a method for sharing information in a way that is friendly to WiFi, cellphones, tablets and the Internet. More information on [https://signalk.org](https://signalk.org/index.html).is part of the Signal K platform
 2. **Signal K Server**: Software in this GitHub repository and described in this document. Signal K server is a full stack application developed in Node.js. Its back-end multiplexes data from and to NMEA0183, NMEA 2000, Signal K and other marine protocols, as well as WiFi, LAN and Internet, and provides APIs and websockets for access and control. Its front-end provides an extensible web-based application allowing easy configuration and management of server functions and capabilities.
