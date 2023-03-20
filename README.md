@@ -20,7 +20,7 @@
 If you develop or use marine electronics, Signal K server has something to offer for you. This document explains how you can take advantage of the Signal K server for your needs.  
 
 ### Boaters and Boat Owners
-For boaters, Signal K  is a platform that runs in the background and makes functionality and data available to other apps and devices. One of its most popular features is to make data from the navigation  system, such as position, course, speed as well as AIS targets. This information is then easily accessible from popular apps like Navionics, iSailor, iNavX, Aqua Map and WilhelmSK via the WiFi network.
+For boaters, Signal K server runs in the background and makes functionality and data available to other apps and devices. One of its most popular features is to make data from the navigation  system, such as position, course, speed as well as AIS targets. This information is then easily accessible from popular apps like Navionics, iSailor, iNavX, Aqua Map and WilhelmSK via the WiFi network.
 
 Signal K  can also take care of the anchor watch, be a weather station and an automatic logbook. And as a final example, it can turn your boat into a MarineTraffic station which may give free access to 
 [their professional plans](https://help.marinetraffic.com/hc/en-us/articles/360017183497-As-a-station-owner-am-I-entitled-to-a-free-Subscription-).
